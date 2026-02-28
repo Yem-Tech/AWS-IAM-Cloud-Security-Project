@@ -26,8 +26,8 @@ The objective was to design and validate a least-privilege access model that res
 
 ### Compute Infrastructure
 - Launched EC2 instances:
-  - Audit Server
-  - Sales Server
+  - HyperTechai-Audit-Ashafa (Audit Server)
+  - HyperTechai-Sales-Bryan (Sales Server)
 - Applied instance tagging strategy for access control logic  
 
 ### Monitoring & Alerting
@@ -43,8 +43,8 @@ The objective was to design and validate a least-privilege access model that res
 ## Tagging Strategy
 | Instance | Tag Key | Tag Value |
 |--------|--------|-----------|
-| Audit | Environment | Audit |
-| Sales | Environment | Sales |
+|HyperTechai-Audit-Ashafa | Environment | Audit |
+|HyperTechai-Sales-Bryan | Environment | Sales |
 
 Tags were used to control policy logic and enforce targeted permissions.
 
@@ -53,8 +53,8 @@ Tags were used to control policy logic and enforce targeted permissions.
 ## IAM Policy Implementation
 A custom JSON IAM policy was created to:
 
-- Deny start/stop actions on the **Audit** instance  
-- Allow start/stop actions on the **Sales** instance  
+- Deny start/stop actions on the **HyperTechai-Audit-Ashafa** instance  
+- Allow start/stop actions on the **HyperTechai-Sales-Bryan** instance  
 
 This demonstrates real-world access segmentation using resource-level permissions.
 
@@ -64,10 +64,10 @@ This demonstrates real-world access segmentation using resource-level permission
 
 | Action | Expected | Result |
 |------|---------|-------|
-Stop Audit Instance | Denied | Access denied |
-Start Audit Instance | Denied | Access denied |
-Stop Sales Instance | Allowed | Success |
-Start Sales Instance | Allowed | Success |
+Stop HyperTechai-Audit-Ashafa Instance | Denied | Access denied |
+Start HyperTechai-Audit-Ashafa Instance | Denied | Access denied |
+Stop HyperTechai-Sales-Bryan Instance | Allowed | Success |
+Start HyperTechai-Sales-Bryan Instance | Allowed | Success |
 
 Additional permission tests confirmed access denial for restricted API calls including:
 
