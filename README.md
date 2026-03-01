@@ -84,7 +84,7 @@ This repository contains evidence screenshots of:
 
 - [AWS console interface](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/0-AWS_console_interface.png)
 - [EC2 instances deployed](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/3-EC2_instances_deployed.png)
-- [IAM policy configuration[(https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/4-IAM_policy_audit_config.png)
+- [IAM policy configuration](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/4-IAM_policy_audit_config.png)
 - [Account alias setup](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/5-acct_Alias.png)
 - [IAM users and groups](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/6-IAM_users.png)
 - [EC2 instance Cloudwatch Alarm](https://github.com/Yem-Tech/AWS-IAM-Cloud-Security-Project/blob/main/Screenshots/7-EC2_instance_Cloudwatch_Alarm.png)
