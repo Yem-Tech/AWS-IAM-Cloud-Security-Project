@@ -62,6 +62,8 @@ This demonstrates real-world access segmentation using resource-level permission
 
 The following IAM policy restricts full EC2 actions to resources tagged as Audit while allowing general Describe operations on all instances. Tag creation and deletion are explicitly denied.
 
+<pre>
+```json
 {
 "Version": "2012-10-17",
 "Statement": [
@@ -90,6 +92,10 @@ The following IAM policy restricts full EC2 actions to resources tagged as Audit
 }
 ]
 }
+```
+</pre>
+
+
 
 ---
 
