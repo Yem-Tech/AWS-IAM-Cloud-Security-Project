@@ -58,6 +58,39 @@ A custom JSON IAM policy was created to:
 
 This demonstrates real-world access segmentation using resource-level permissions.
 
+## Sample IAM Policy (Audit Instance)
+
+The following IAM policy restricts full EC2 actions to resources tagged as Audit while allowing general Describe operations on all instances. Tag creation and deletion are explicitly denied.
+
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "Allow",
+"Action": "ec2:*",
+"Resource": "*",
+"Condition": {
+"StringEquals": {
+"ec2:ResourceTag/Env": "Audit"
+}
+}
+},
+{
+"Effect": "Allow",
+"Action": "ec2:Describe*",
+"Resource": "*"
+},
+{
+"Effect": "Deny",
+"Action": [
+"ec2:DeleteTags",
+"ec2:CreateTags"
+],
+"Resource": "*"
+}
+]
+}
+
 ---
 
 ## Access Testing Results
