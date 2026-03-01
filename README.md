@@ -1,7 +1,7 @@
 # AWS Cloud Security Project – IAM Policy Enforcement Lab
 
 ## Overview
-This project demonstrates hands-on implementation of cloud security controls within :contentReference[oaicite:0]{index=0}, focusing on Identity and Access Management (IAM), monitoring, logging, and access restriction testing.  
+This hands-on lab demonstrates the implementation of AWS cloud security controls, focusing on Identity and Access Management (IAM), monitoring, logging, and access restriction testing.  
 
 The objective was to design and validate a least-privilege access model that restricts specific actions on designated EC2 instances while allowing permitted operations on others.
 
