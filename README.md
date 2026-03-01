@@ -133,5 +133,5 @@ This lab simulates real-world cloud security engineering tasks and demonstrates 
 ---
 
 ## Author
-Cybersecurity & Cloud Security Enthusiast  
-Hands-on lab portfolio demonstrating practical infrastructure security skills.
+Olayemi K. Owoeye
+Cybersecurity Analyst
